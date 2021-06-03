@@ -1,0 +1,344 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+.body {
+	font-family: 'Noto Sans HK', sans-serif;
+}
+
+/* 頁首 */
+.wrapper {
+	height: 100%;
+}
+
+.header {
+    display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #E0E0E0;
+	background: #fffff0;
+	position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+	z-index: 999;
+	opacity: .9;
+}
+
+.header h1 {
+	font-size: 24px;
+}
+
+.logo > img {
+	width: 120px;
+}
+
+.nav-bar-left {
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.nav-bar-left .nav a{
+	font-family: 'Noto Sans HK', sans-serif;
+	color: black;
+	text-decoration:none;
+}
+
+.nav-bar-left .nav a:hover {
+	color: #e5488a;
+	transition: all .35s;
+} 
+
+.nav-bar-right {
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+	align-items: flex-end;
+}
+
+.nav-bar-right .nav a{
+	font-size: 22px;
+	color: black;
+}
+
+.nav-bar-right .nav a:hover {
+	color: #e5488a;
+	transition: all .35s;
+}
+
+/* 大圖 */
+.background {
+	max-height: 550px;
+	overflow: hidden;
+	position: relative;
+}
+
+.background h3 {
+	border-top: 10px double #3C3C3C;
+	border-left: 10px double #3C3C3C;
+	border-right: 10px double #3C3C3C;
+	border-bottom: 10px double #3C3C3C;
+	font-size: 85px;
+	color:#3C3C3C;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.background .background_name {
+	position:absolute;
+	bottom: 3%;
+	right: 3%;
+	text-align: end;
+}
+
+.background .message_btn{
+    padding: 80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.wrap:hover .background_name h3 {
+	color: #3C3C3C;
+	transition: all .8s;
+	border-bottom: 10px double #3C3C3C;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-bottom: .5em;
+}
+
+
+/* .background .message_btn{
+    font-size: 12px;
+    padding: 15px 105px;
+	background:#FF79BC;
+	border: none;
+    letter-spacing: .2em;
+    border-radius: 5px; 
+    cursor: pointer;
+    position: relative;
+	transition: all .35s;
+}
+
+.background .message_btn a {
+    text-decoration:none;
+    z-index: 2;
+}
+
+
+.background .message_btn:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+	height: 100%;
+	background: #e5488a;
+    transition: all .35s;
+    border-radius: 2px;
+}
+
+.background .message_btn:hover a{
+    color: #fff; 
+}*/
+
+/* content 商品一覽內文 */
+.content {
+	background: #fff;
+}
+.content h2 {
+	text-align: center;
+	border-bottom: 1.5px solid #D0D0D0;
+	margin: 0 1em 1em 1em;
+	padding-bottom: .5em;
+	padding-top: 5em;
+}
+
+.item img {
+border-radius: 3px;
+cursor: pointer;
+}
+
+.item .goods {
+	text-align: center;
+	font-size: 14px;
+}
+
+.item .Amount {
+	text-align: center;
+	font-size: 12px;
+	opacity: 0;
+}
+
+.item:hover .Amount {
+	opacity: 1;
+	transition: all .5s;
+}
+
+.item:hover img {
+	opacity: .8;
+}
+
+.item:hover {
+	transform: translateY(-20px);
+	transition: all .8s;
+}
+
+/* 特殊商品 */
+
+.main h2 {
+	text-align: center;
+	border-bottom: 1.5px solid #D0D0D0;
+	margin: 0 1em 1em 1em;
+	padding-bottom: .5em;
+	padding-top: 1em;
+}
+
+.main {
+	background: #fff;
+}
+
+.swiper-container {
+	width: 250px;
+}
+
+
+.main .Amount {
+	opacity: 1;
+}
+
+.main .message_btn:after {
+	background: #fff;
+}
+
+/* main-2 */
+.main-2 {
+    max-width: 100%;
+    max-height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+.main-2 .slogan_pic {
+    background-image: url(/img/1122606.jpg);
+    background-attachment: fixed;
+    width: 1505px;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+.main-2 .slogan{
+    width: 250px;
+    background: #f9d9ca;
+    z-index: 99;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.main-2 .slogan p:nth-child(1) {
+	font-size: 18px;
+	text-align: center;
+}
+
+.main-2 .slogan p:nth-child(2) {
+	font-size: 10px;
+	text-align: center;
+	line-height:32px;
+}
+
+
+
+
+
+/* 頁尾 */
+.footer {
+	border-top:  1.5px solid #D0D0D0;
+	background: #fffff0;
+	font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.footer-container {
+    display: flex;
+	justify-content:space-between;
+}
+
+.footer-nav a{
+	font-size: 14px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+
+.footer-nav a:hover{
+	color: #9D9D9D;
+}
+
+.footer p {
+	font-size: 12px;
+
+}
+
+.about p:first-child, .end-menu p, .message p:first-child {
+	font-weight:bold;
+	font-size: 16px;
+}
+
+.message input {
+	background: #fffff0;
+	border: 1px solid #BEBEBE;
+	border-radius: 3px;
+}
+
+
+.message_btn{
+    padding: 80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.message_btn{
+    font-size: 12px;
+    padding: 10px 15px;
+    background:#f5db8b;
+    border: 1px solid #f5db8b;
+    letter-spacing: .2em;
+    border-radius: 2px; 
+    cursor: pointer;
+    position: relative;
+    transition: all .35s;
+}
+
+.message_btn a {
+    text-decoration:none;
+    color: black;
+    z-index: 2;
+}
+
+
+.message_btn:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:  #fffff0;
+    transition: all .35s;
+    border-radius: 2px;
+}
+
+.message_btn:hover a{
+    color: #f5db8b;
+}
+
+.message_btn:hover:after{
+    width: 100%;
+}
+
+.footer-logo {
+	text-align: center;
+}

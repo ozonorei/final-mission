@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+.body {
+	font-family: 'Noto Sans HK', sans-serif;
+}
+
+/* 頁首 */
+.wrapper {
+	background: #fffff0;
+}
+
+.header {
+    display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #E0E0E0;
+    background: #fffff0;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+	z-index: 99;
+	opacity: .9;
+}
+
+.header h1 {
+	font-size: 24px;
+}
+
+.background {
+	max-height: 550px;
+	overflow: hidden;
+}
+
+.logo > img {
+	width: 120px;
+}
+
+.nav-bar-left {
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.nav-bar-left .nav a{
+	font-family: 'Noto Sans HK', sans-serif;
+	color: black;
+	text-decoration:none;
+}
+
+.nav-bar-left .nav a:hover {
+	color: #e5488a;
+	transition: all .35s;
+} 
+
+.nav-bar-right {
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+	align-items: flex-end;
+}
+
+.nav-bar-right .nav a{
+	font-size: 22px;
+	color: black;
+}
+
+.nav-bar-right .nav a:hover {
+	color: #e5488a;
+	transition: all .35s;
+} 
+
+/* 登入主頁 */
+.content {
+    background: #fffff0;
+    padding: 250px 0 150px 0;
+}
+
+.content h3 {
+    text-align: center;
+    font-weight:lighter;
+    font-size: 35px;
+}
+
+.content p {
+    text-align: center;
+    font-weight:lighter;
+    font-size: 10px;
+}
+
+.content p a {
+    text-decoration:none;
+}
+
+.content p a:hover {
+    color: red;
+    font-weight:300;
+    transition: all .35s;
+}
+
+
+.content form input {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 400px;
+    font-size: 10px;
+    border: 1px solid #D0D0D0;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.content form button {
+    display: block;
+    margin: 0 auto;
+}
+
+.content  .message_btn{
+    width: 400px;
+    padding: 15px 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+/* 頁尾 */
+.footer {
+    border-top:  1.5px solid #D0D0D0;
+	background: #fffff0;
+	font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.footer-container {
+    display: flex;
+	justify-content:space-between;
+}
+
+.footer-nav a{
+	font-size: 14px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+
+.footer-nav a:hover{
+	color: #9D9D9D;
+}
+
+.footer p {
+	font-size: 12px;
+
+}
+
+.about p:first-child, .end-menu p, .message p:first-child {
+	font-weight:bold;
+	font-size: 16px;
+}
+
+.message input {
+	background: #fffff0;
+	border: 1px solid #BEBEBE;
+	border-radius: 3px;
+}
+
+
+.message_btn{
+    padding: 80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.message_btn{
+    font-size: 12px;
+    padding: 10px 15px;
+    background:#f5db8b;
+    border: 1px solid #f5db8b;
+    letter-spacing: .2em;
+    border-radius: 2px; 
+    cursor: pointer;
+    position: relative;
+    transition: all .35s;
+}
+
+.message_btn a {
+    text-decoration:none;
+    color: black;
+    z-index: 2;
+}
+
+
+.message_btn:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fffff0;
+    transition: all .5s;
+    border-radius: 2px;
+}
+
+.message_btn:hover a{
+    color: #f5db8b;
+}
+
+.message_btn:hover:after{
+    width: 100%;
+}
+
+.footer-logo {
+	text-align: center;
+}
