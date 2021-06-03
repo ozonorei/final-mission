@@ -77,13 +77,11 @@
 }
 
 .background h3 {
-	border-top: 10px double #3C3C3C;
-	border-left: 10px double #3C3C3C;
-	border-right: 10px double #3C3C3C;
-	border-bottom: 10px double #3C3C3C;
+	border: 10px double #3C3C3C;
 	font-size: 85px;
 	color:#3C3C3C;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
+	transition: all .5s;
 }
 
 .background .background_name {
