@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Forgot_password.css">
+    <link rel="stylesheet" href="css/shopping_cart.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94b7d412af.js" crossorigin="anonymous"></script>
@@ -29,20 +29,45 @@
             <div class="nav m-2 me-3"><a href="shopping_cart.html"><i class="fas fa-shopping-cart"></i></a></div>
         </div>
     </div>
-    <!-- <div class="background">
-        <img class="w-100" src="img/S__172277763.jpg" alt="">
-    </div> -->
     <div class="content">
-        <h3>忘記密碼</h3>
-        <p class="mb-5">請輸入您的電子信箱</p>
-        <form action="index.html">
-            <input class="mb-3" type="email" name="email" placeholder="請輸入電子信箱">
-            <button class="message_btn mt-4"　type="submit">
-                <a href="/">送出</a>
+        <p>購物車</p>
+        <div class="title container pb-3">
+            <div class="row">
+                <div class="col-12 col-md-7">商品</div>
+                <div class="col-12 col-md-2 mx-auto">數量</div>
+                <div class="col-12 col-md-2">合計</div>
+            </div>
+        </div>
+        <div class="allitems container m-5">
+            <div class="row">
+                <div class="col-12 col-md-7 item">
+                    <div class="pic me-4">
+                        <img src="img/tamami01.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="mb-1">Satin Wide Hair Band</p>
+                        <p class="mb-1">sm</p>
+                        <p class="mb-1">￥9,800</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 p-2 m-auto">
+                    <div class="amount mb-2">
+                        <i class="fas fa-minus m-3"></i>
+                        <div>1</div>
+                        <i class="fas fa-plus m-3"></i>
+                    </div>
+                    <a href="/">刪除</a>
+                </div>
+                <div class="col-12 col-md-2 cash">￥9,800</div>
+            </div>
+        </div>
+        <div class="Settlement mx-5 mb-5">
+            <p>合計：￥9,800</p>
+            <button class="message_btn next"　type="submit">
+                <a href="/">下一步</a>
             </button>
-        </form>
-        <p class="mt-3 mb-0">輸入您的電子信箱後點選發送，請到你的電子信箱接收信件。</p>
-        <p class="m-0"><a href="Sign_in.html">返回上一頁</a></p>
+        </div>
+
     </div>
     <div class="main"></div>
     <div class="footer">
@@ -50,7 +75,7 @@
             <div class="end-menu">
                 <p>Menu</p>
                 <div class="footer-nav mb-2"><a href="index.html">首頁</a></div>
-                <div class="footer-nav mb-2"><a href="Sign_in.html">會員登入</a></div>
+                <div class="footer-nav mb-2"><a href="Sign_in.html">會員註冊</a></div>
                 <div class="footer-nav mb-2"><a href="items.html">商品一覽</a></div>
                 <div class="footer-nav mb-2"><a href="customer_service.html">客服中心</a></div>
             </div>
