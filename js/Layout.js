@@ -14,6 +14,7 @@ $(document).ready(function () {
         
         $('.zhezhao').fadeToggle();
         $('.zhezhao').toggleClass('active');
+        // or add ?
     });
 
     $('.shopping-bar-close').click(function (e) { 

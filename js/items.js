@@ -1,3 +1,15 @@
+$(document).ready(function () {
+    $('.fa-th-large').click(function (e) { 
+        e.preventDefault();
+        $('.col-12').addClass('col-md-6');
+    });
+
+    $('.fa-th').click(function (e) { 
+        e.preventDefault();
+        $('.col-12').removeClass('col-md-6');
+    });
+});
+
 var items = ['Satin Wide Hair Band', 'PunchieearlScr', 'CanvasLogoToteBag', 'EcoLeatherTwo-WayBag'];
 
 items.sort();
